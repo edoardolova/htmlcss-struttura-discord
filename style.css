@@ -14,8 +14,8 @@
     --discord-section-bg-grey:#D3D3D3;
     --discord-big-div-bg:#228B22;
     --discord-footer-bg:black;
-    --discord-col-large-prot-bg:#F08080;
-    --discord-col-small-prot-bg:#20B2AA;
+    --discord-footer-col-large-prot-bg:#F08080;
+    --discord-footer-col-small-prot-bg:#20B2AA;
     --discord-last-prot-bg:#7FFFD4;
 }
 
@@ -44,6 +44,10 @@ ul{
     .border-dashed{
         border: 2px black dashed;
     }
+
+    .border-dashed-white{
+        border: 2px white dashed;
+    }
     
 }
 /* #endregion debug  */
@@ -59,9 +63,7 @@ ul{
     margin: 0 auto;
 }
 
-section{
-    padding: 30px 0;
-}
+
 
 .col-small{
     width: 40%;
@@ -111,6 +113,14 @@ section{
     }
 }
 
+/* main  */
+main{
+
+    section{
+        padding: 30px 0;
+    }
+}
+
 /* hero  */
 .hero{
     background-color: var(--discord-hero-bg);
@@ -126,6 +136,25 @@ section{
 .col-single{
     width: 100%;
     height: 800px;
+}
+
+
+/* footer  */
+footer{
+    background-color: black;
+    padding: 10px 0 30px 0;
+    border-bottom: 1px solid white;
+
+    .col-large{
+        width: calc((100% / 6) * 2);
+        height: 400px;
+        background-color: var(--discord-footer-col-large-prot-bg);
+    }
+
+    .col{
+        width: calc(100% / 6);
+        background-color: var(--discord-footer-col-small-prot-bg);
+    }
 }
 
 
