@@ -42,8 +42,8 @@ ul{
         background-color: var(--discord-footer-bg);
     }
 
-    .border-dot{
-        border: 1px black dotted;
+    .border-dashed{
+        border: 2px black dashed;
     }
     
 }
@@ -58,7 +58,10 @@ ul{
 .container{
     width: 70%;
     margin: 0 auto;
+}
 
+section{
+    padding: 20px 0;
 }
 
 /* header  */
@@ -86,5 +89,17 @@ ul{
     }
     >div:last-of-type{
         justify-content: flex-end;
+    }
+}
+
+/* hero  */
+.hero{
+    background-color: var(--discord-hero-bg);
+
+    .jumbotron{
+        width: 60%;
+        height: 300px;
+        margin: 0 auto;
+        background-color: var(--discord-hero-prot-bg);
     }
 }
