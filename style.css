@@ -19,11 +19,17 @@
     --discord-last-prot-bg:#7FFFD4;
 }
 
+ul{
+    list-style: none;
+}
+
+/* #region debug  */
 .debug{
 
+
     >#header{
-        min-height: 80px;
         background-color: var(--discord-header-bg);
+        padding: 10px 0;
     }
 
     >#main{
@@ -34,5 +40,51 @@
     >#footer{
         min-height: 300px;
         background-color: var(--discord-footer-bg);
+    }
+
+    .border-dot{
+        border: 1px black dotted;
+    }
+    
+}
+/* #endregion debug  */
+
+
+/* utils  */
+.d-flex{
+    display: flex;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+/* header  */
+.nav{
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--discord-nav-bg);
+
+    >div{
+        padding: 5px;
+    }
+
+    >div:nth-child(even){
+        width: 60%;
+        ul{
+            justify-content: center;
+            li{
+                padding: 0 5px;
+            }
+
+        }
+    }
+    >div:nth-child(odd){
+        width: 20%;
+    }
+    >div:last-of-type{
+        justify-content: flex-end;
     }
 }
