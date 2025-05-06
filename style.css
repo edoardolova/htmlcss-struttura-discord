@@ -25,51 +25,56 @@ ul{
 
 /* #region debug  */
 .debug{
-    .border-dashed{
-        border: 2px black dashed;
+    header{
+        .nav{
+            background-color: var(--discord-nav-bg);
+        }
     }
-    .border-dashed-white{
-        border: 2px white dashed;
-    }
-
-    .bg-grey{
-        background-color: var(--discord-section-bg-grey);
-    }
-    
-    .bg-green{
-        background-color: var(--discord-big-div-bg);
-    }
-    
-    .bg-aqua{
-        background-color: var(--discord-footer-banner-prot-bg);
-    }
-
-    .col-small-bg{
-        background-color: var(--discord-small-div-bg);
-    }
-    
-    .col-large-bg{
+    main{
+        section:nth-child(2n+3){
+            background-color: var(--discord-section-bg-grey);
+        }
+        .col-small{
+            background-color: var(--discord-small-div-bg);
+        }
+        .col-large{
         background-color: var(--discord-large-div-bg);
+        }
+        .jumbotron{
+            background-color: var(--discord-hero-prot-bg);
+        }
+        .col-single{
+            background-color: var(--discord-big-div-bg);
+        }
     }
+    footer{
+        .link-col-large{
+            background-color: var(--discord-footer-col-large-prot-bg);
+        }
+        .link-col{
+            background-color: var(--discord-footer-col-small-prot-bg);
+
+        }
+        .banner{
+            background-color: var(--discord-footer-banner-prot-bg);
+            div{
+                background-color: var(--discord-small-div-bg);
+            }
+        }
+    }
+    .container{
+        >div{
+            border: 2px black dashed;
+
+        }
+        >div.link-col{
+            border: 2px white dashed;
     
-    .header-nav-bg{
-    background-color: var(--discord-nav-bg);
+        }
     }
+    .jumbotron{
+        border: 2px black dashed;
 
-    .jumbotron-bg{
-    background-color: var(--discord-hero-prot-bg);
-    }
-
-    .link-col-large-bg{
-    background-color: var(--discord-footer-col-large-prot-bg);
-    }
-
-    .link-col-bg{
-        background-color: var(--discord-footer-col-small-prot-bg);
-    }
-
-    .footer-banner-bg{
-    background-color: var(--discord-small-div-bg);
     }
 }
 /* #endregion debug  */
