@@ -31,6 +31,46 @@ ul{
     .border-dashed-white{
         border: 2px white dashed;
     }
+
+    .bg-grey{
+        background-color: var(--discord-section-bg-grey);
+    }
+    
+    .bg-green{
+        background-color: var(--discord-big-div-bg);
+    }
+    
+    .bg-aqua{
+        background-color: var(--discord-footer-banner-prot-bg);
+    }
+
+    .col-small-bg{
+        background-color: var(--discord-small-div-bg);
+    }
+    
+    .col-large-bg{
+        background-color: var(--discord-large-div-bg);
+    }
+    
+    .header-nav-bg{
+    background-color: var(--discord-nav-bg);
+    }
+
+    .jumbotron-bg{
+    background-color: var(--discord-hero-prot-bg);
+    }
+
+    .link-col-large-bg{
+    background-color: var(--discord-footer-col-large-prot-bg);
+    }
+
+    .link-col-bg{
+        background-color: var(--discord-footer-col-small-prot-bg);
+    }
+
+    .footer-banner-bg{
+    background-color: var(--discord-small-div-bg);
+    }
 }
 /* #endregion debug  */
 
@@ -47,24 +87,10 @@ ul{
 .col-small{
     width: 40%;
     height: 400px;
-    background-color: var(--discord-small-div-bg);
 }
 
 .col-large{
     width: 60%;
-    background-color: var(--discord-large-div-bg);
-}
-
-.bg-grey{
-    background-color: var(--discord-section-bg-grey);
-}
-
-.bg-green{
-    background-color: var(--discord-big-div-bg);
-}
-
-.bg-aqua{
-    background-color: var(--discord-footer-banner-prot-bg);
 }
 /* #endregion utils  */
 
@@ -77,7 +103,6 @@ header{
 .nav{
     justify-content: space-between;
     align-items: center; 
-    background-color: var(--discord-nav-bg);
     >div{
         padding: 5px;
     }
@@ -113,7 +138,6 @@ main{
         width: 60%;
         height: 300px;
         margin: 0 auto;
-        background-color: var(--discord-hero-prot-bg);
     }
 }
 
@@ -136,13 +160,14 @@ footer{
     .link-col-large{
         width: calc((100% / 6) * 2);
         height: 400px;
-        background-color: var(--discord-footer-col-large-prot-bg);
     }
     .link-col{
         width: calc(100% / 6);
-        background-color: var(--discord-footer-col-small-prot-bg);
     }
 }
+
+
+
 
 /* banner section  */
 .footer-banner-section{
@@ -152,10 +177,10 @@ footer{
         justify-content: space-between;
         div{
             padding: 5px;
-            background-color: var(--discord-small-div-bg);
         }
     }
 }
+
 /* #endregion footer  */
 
 
