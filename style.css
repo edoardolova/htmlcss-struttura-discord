@@ -16,7 +16,7 @@
     --discord-footer-bg:black;
     --discord-footer-col-large-prot-bg:#F08080;
     --discord-footer-col-small-prot-bg:#20B2AA;
-    --discord-last-prot-bg:#7FFFD4;
+    --discord-footer-banner-prot-bg:#7FFFD4;
 }
 
 ul{
@@ -25,35 +25,16 @@ ul{
 
 /* #region debug  */
 .debug{
-
-
-    >#header{
-        background-color: var(--discord-header-bg);
-        padding: 10px 0;
-    }
-
-    >#main{
-        min-height: 1000px;
-    }
-
-    >#footer{
-        min-height: 300px;
-        background-color: var(--discord-footer-bg);
-    }
-
     .border-dashed{
         border: 2px black dashed;
     }
-
     .border-dashed-white{
         border: 2px white dashed;
     }
-    
 }
 /* #endregion debug  */
 
-
-/* utils  */
+/* #region utils  */
 .d-flex{
     display: flex;
 }
@@ -62,8 +43,6 @@ ul{
     width: 70%;
     margin: 0 auto;
 }
-
-
 
 .col-small{
     width: 40%;
@@ -84,17 +63,24 @@ ul{
     background-color: var(--discord-big-div-bg);
 }
 
+.bg-aqua{
+    background-color: var(--discord-footer-banner-prot-bg);
+}
+/* #endregion utils  */
 
-/* header  */
+/* #region header  */
+header{
+    background-color: var(--discord-header-bg);
+    padding: 10px 0;
+}
+
 .nav{
     justify-content: space-between;
     align-items: center; 
     background-color: var(--discord-nav-bg);
-
     >div{
         padding: 5px;
     }
-
     >div:nth-child(even){
         width: 60%;
         ul{
@@ -102,7 +88,6 @@ ul{
             li{
                 padding: 0 5px;
             }
-
         }
     }
     >div:nth-child(odd){
@@ -112,10 +97,10 @@ ul{
         justify-content: flex-end;
     }
 }
+/* #endregion header  */
 
-/* main  */
+/* #region main  */
 main{
-
     section{
         padding: 30px 0;
     }
@@ -137,24 +122,41 @@ main{
     width: 100%;
     height: 800px;
 }
+/* #endregion main  */
 
-
-/* footer  */
+/* #region footer  */
 footer{
-    background-color: black;
+    background-color: var(--discord-footer-bg);
+}
+
+/* link section  */
+.link-section{
     padding: 10px 0 30px 0;
     border-bottom: 1px solid white;
-
-    .col-large{
+    .link-col-large{
         width: calc((100% / 6) * 2);
         height: 400px;
         background-color: var(--discord-footer-col-large-prot-bg);
     }
-
-    .col{
+    .link-col{
         width: calc(100% / 6);
         background-color: var(--discord-footer-col-small-prot-bg);
     }
 }
+
+/* banner section  */
+.footer-banner-section{
+    padding-top: 15px;
+    .banner{
+        padding: 10px 0;
+        justify-content: space-between;
+        div{
+            padding: 5px;
+            background-color: var(--discord-small-div-bg);
+        }
+    }
+}
+/* #endregion footer  */
+
 
 
