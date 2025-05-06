@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --discord-header-bg:#ADD8E6;
+    --discord-nav-bg:#DAA520;
+    --discord-hero-bg:#00008B;
+    --discord-hero-prot-bg:#EE82EE;
+    --discord-large-div-bg:#1E90FF;
+    --discord-small-div-bg:#FFC0CB;
+    --discord-parent-section-bg:#D3D3D3;
+    --discord-big-div-bg:#228B22;
+    --discord-footer-bg:black;
+    --discord-col-large-prot-bg:#F08080;
+    --discord-col-small-prot-bg:#20B2AA;
+    --discord-last-prot-bg:#7FFFD4;
+}
+
+.debug{
+
+    >#header{
+        min-height: 80px;
+        background-color: var(--discord-header-bg);
+    }
+
+    >#main{
+        min-height: 1000px;
+        background-color: red;
+    }
+
+    >#footer{
+        min-height: 300px;
+        background-color: var(--discord-footer-bg);
+    }
+}
