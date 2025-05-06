@@ -11,7 +11,7 @@
     --discord-hero-prot-bg:#EE82EE;
     --discord-large-div-bg:#1E90FF;
     --discord-small-div-bg:#FFC0CB;
-    --discord-parent-section-bg:#D3D3D3;
+    --discord-section-bg-grey:#D3D3D3;
     --discord-big-div-bg:#228B22;
     --discord-footer-bg:black;
     --discord-col-large-prot-bg:#F08080;
@@ -68,10 +68,16 @@ section{
     height: 400px;
     background-color: var(--discord-small-div-bg);
 }
+
 .col-large{
     width: 60%;
     background-color: var(--discord-large-div-bg);
 }
+
+.bg-grey{
+    background-color: var(--discord-section-bg-grey);
+}
+
 
 /* header  */
 .nav{
