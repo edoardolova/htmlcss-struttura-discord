@@ -78,6 +78,10 @@ section{
     background-color: var(--discord-section-bg-grey);
 }
 
+.bg-green{
+    background-color: var(--discord-big-div-bg);
+}
+
 
 /* header  */
 .nav{
@@ -116,6 +120,12 @@ section{
         margin: 0 auto;
         background-color: var(--discord-hero-prot-bg);
     }
+}
+
+/* section4  */
+.col-single{
+    width: 100%;
+    height: 800px;
 }
 
 
